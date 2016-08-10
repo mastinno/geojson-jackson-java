@@ -7,7 +7,7 @@
 		<version>7</version>
 	</parent>
 
-	<groupId>org.geojson.jackson</groupId>
+	<groupId>com.github.mastinno</groupId>
 	<artifactId>geojson-jackson-java</artifactId>
 	<version>1.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
