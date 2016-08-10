@@ -7,9 +7,9 @@
 		<version>7</version>
 	</parent>
 
-	<groupId>de.grundid.opendatalab</groupId>
+	<groupId>org.geojson.jackson</groupId>
 	<artifactId>geojson-jackson-java</artifactId>
-	<version>1.7-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 
@@ -20,8 +20,19 @@
 	<scm>
 		<connection>scm:git:git://github.com/mastinno/geojson-jackson-java.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:/mastinno/geojson-jackson-java.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+	  	<tag>geojson-jackson-java-1.0</tag>
+    </scm>
+    
+    <distributionManagement>
+        <snapshotRepository>
+           <id>ossrh</id>
+           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+	    <repository>
+	       <id>ossrh</id>
+	       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+	    </repository>
+    </distributionManagement>
 
 	<licenses>
 		<license>
@@ -84,6 +95,9 @@
 				<configuration>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<arguments>-Psonatype-oss-release -Dgpg.passphrase=</arguments>
+			        <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                    </checkModificationExcludes>
 				</configuration>
 			</plugin>
 			<plugin>
