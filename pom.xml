@@ -8,18 +8,18 @@
 	</parent>
 
 	<groupId>de.grundid.opendatalab</groupId>
-	<artifactId>geojson-jackson</artifactId>
+	<artifactId>geojson-jackson-java</artifactId>
 	<version>1.7-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 
 	<name>GeoJson POJOs for Jackson </name>
-	<url>https://github.com/opendatalab-de/geojson-jackson</url>
-	<description>A collection of Java POJOs for GeoJson</description>
+	<url>https://github.com/mastinno/geojson-jackson-java</url>
+	<description>A collection of Java POJOs for GeoJson (fork from https://github.com/opendatalab-de/geojson-jackson)</description>
 
 	<scm>
-		<connection>scm:git:git://github.com/opendatalab-de/geojson-jackson.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/opendatalab-de/geojson-jackson.git</developerConnection>
+		<connection>scm:git:git://github.com/mastinno/geojson-jackson-java.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:/mastinno/geojson-jackson-java.git</developerConnection>
 	  <tag>HEAD</tag>
   </scm>
 
@@ -33,10 +33,8 @@
 
 	<developers>
 		<developer>
-			<name>Adrian Stabiszewski</name>
-			<email>as@nfctools.org</email>
-			<organization>GrundID GmbH</organization>
-			<organizationUrl>http://www.grundid.de</organizationUrl>
+			<name>Vadym Yaremchuk</name>
+			<email>mastinno@gmail.com</email>
 		</developer>
 	</developers>
 

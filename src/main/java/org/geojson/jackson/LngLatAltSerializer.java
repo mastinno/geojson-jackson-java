@@ -47,8 +47,8 @@ public class LngLatAltSerializer extends JsonSerializer<LngLatAlt> {
 	public void serialize(LngLatAlt value, JsonGenerator jgen, SerializerProvider provider) throws IOException,
 			JsonProcessingException {
 		jgen.writeStartArray();
-		jgen.writeNumber(fastDoubleToString(value.getLongitude(), 9));
-		jgen.writeNumber(fastDoubleToString(value.getLatitude(), 9));
+		jgen.writeNumber(value.getLongitude());
+		jgen.writeNumber(value.getLatitude());
 		if (value.hasAltitude()) {
 			jgen.writeNumber(value.getAltitude());
 
