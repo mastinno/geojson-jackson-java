@@ -7,21 +7,32 @@
 		<version>7</version>
 	</parent>
 
-	<groupId>de.grundid.opendatalab</groupId>
-	<artifactId>geojson-jackson</artifactId>
-	<version>1.7-SNAPSHOT</version>
+	<groupId>org.geojson.jackson</groupId>
+	<artifactId>geojson-jackson-java</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 
 	<name>GeoJson POJOs for Jackson </name>
-	<url>https://github.com/opendatalab-de/geojson-jackson</url>
-	<description>A collection of Java POJOs for GeoJson</description>
+	<url>https://github.com/mastinno/geojson-jackson-java</url>
+	<description>A collection of Java POJOs for GeoJson (fork from https://github.com/opendatalab-de/geojson-jackson)</description>
 
 	<scm>
-		<connection>scm:git:git://github.com/opendatalab-de/geojson-jackson.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/opendatalab-de/geojson-jackson.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+		<connection>scm:git:git://github.com/mastinno/geojson-jackson-java.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:/mastinno/geojson-jackson-java.git</developerConnection>
+	  	<tag>geojson-jackson-java-1.0.0</tag>
+    </scm>
+    
+    <distributionManagement>
+        <snapshotRepository>
+           <id>ossrh</id>
+           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+	    <repository>
+	       <id>ossrh</id>
+	       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+	    </repository>
+    </distributionManagement>
 
 	<licenses>
 		<license>
@@ -33,10 +44,8 @@
 
 	<developers>
 		<developer>
-			<name>Adrian Stabiszewski</name>
-			<email>as@nfctools.org</email>
-			<organization>GrundID GmbH</organization>
-			<organizationUrl>http://www.grundid.de</organizationUrl>
+			<name>Vadym Yaremchuk</name>
+			<email>mastinno@gmail.com</email>
 		</developer>
 	</developers>
 
@@ -86,6 +95,10 @@
 				<configuration>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<arguments>-Psonatype-oss-release -Dgpg.passphrase=</arguments>
+					<pushChanges>false</pushChanges>
+			        <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                    </checkModificationExcludes>
 				</configuration>
 			</plugin>
 			<plugin>
