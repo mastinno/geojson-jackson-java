@@ -9,7 +9,7 @@
 
 	<groupId>org.geojson.jackson</groupId>
 	<artifactId>geojson-jackson-java</artifactId>
-	<version>1.0</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 
@@ -20,7 +20,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/mastinno/geojson-jackson-java.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:/mastinno/geojson-jackson-java.git</developerConnection>
-	  	<tag>geojson-jackson-java-1.0</tag>
+	  	<tag>geojson-jackson-java-1.0.0</tag>
     </scm>
     
     <distributionManagement>
@@ -95,6 +95,7 @@
 				<configuration>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<arguments>-Psonatype-oss-release -Dgpg.passphrase=</arguments>
+					<pushChanges>false</pushChanges>
 			        <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
