@@ -9,7 +9,7 @@
 
 	<groupId>com.github.mastinno</groupId>
 	<artifactId>geojson-jackson-java</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<packaging>jar</packaging>
 
 
@@ -20,7 +20,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/mastinno/geojson-jackson-java.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:/mastinno/geojson-jackson-java.git</developerConnection>
-	  	<tag>geojson-jackson-java-1.0</tag>
+	  	<tag>geojson-jackson-java-1.0.2</tag>
     </scm>
     
     <distributionManagement>
